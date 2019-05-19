@@ -1,0 +1,66 @@
+
+{% extends 'learn/base.html' %}
+{% block content %}
+
+<style>
+.costumer-satis{
+                height:400px;
+                display:grid;
+                {% load static %}
+                background-image: url("{% static "images/children.jpg" %}");
+                background-size:cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+              }
+              </style>
+
+
+
+<div class="costumer-satis">
+        <center> <div class="cs-texts"><h3> Discover a place<br>
+you’ll love to live</h3>
+</div>
+            <a class="waves-effect waves-light btn">help</a>
+
+ </div>
+<div class="col s12 m8 offset-m2 l6 offset-l3">
+        <div class="card-panel grey lighten-5 z-depth-1">
+          <div class="row halign-wrapper">
+            <div class="col s6">
+                {% load static %}
+              <img src="{% static "images/kid.jpg" %}" alt="" > <!-- notice the "circle" class -->
+            </div>
+            <div class="col s6">
+                <h3 style="color:blue;">Direct Learning</h3>
+              <span class="black-text"
+                  <br> website to learn the things very easily. <br> This website make u to learn the things very easily <br> even without free of cost which would be <br> available for everyone.</span> </div>
+
+          </div>
+        </div>
+</div>
+
+
+
+
+    <div class="row">
+      <div class="col s3">{% load static %}<img src="{% static "images/img.jpeg" %}" alt=""></div>
+      <div class="col s3">{% load static %}<img src="{% static "images/img.jpeg" %}" alt=""></div>
+      <div class="col s3">{% load static %}<img src="{% static "images/img.jpeg" %}" alt=""></div>
+      <div class="col s3">{% load static %}<img src="{% static "images/img.jpeg" %}" alt=""></div>
+    </div>
+
+
+        <center> <div class="cs-texts"><h3> Discover a place<br>
+           dhfcfukwdfjiowdjcdkvdkvidjvdkjvvjefjvfvfjv
+        </div>
+
+         <div class="row">
+             <div class="col s6">
+<      <div class="col s3 </div>
+      <div class="col s3">{% load static %}<img src="{% static "images/img.jpeg" %}" alt=""></div>
+      <div class="col s3">{% load static %}<img src="{% static "images/img.jpeg" %}" alt=""></div>
+      <div class="col s3">{% load static %}<img src="{% static "images/img.jpeg" %}" alt=""></div>
+             </div>
+
+
+{% endblock %}

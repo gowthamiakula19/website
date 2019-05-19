@@ -1,0 +1,74 @@
+{% extends 'learn/base.html' %}
+{% block content %}
+<style>
+ @media only screen and (max-device-width: 480px) {
+       .row .col.s8 {
+    width: 100%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+}
+.row .col.s4 {
+    width: 100%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+}
+}
+    </style>
+
+<div class="col s12 m8 offset-m2 l6 offset-l3">
+        <div class="card-panel grey lighten-5 z-depth-1">
+          <div class="row halign-wrapper">
+
+            <div class="col s8">
+                <i><h3 style="color:red">learning</h3></i>
+                <p style="font-size:13px;">Hi Thank you for your interest in the learning.
+                Please find the details of the site and stepsas how we would realise
+                the dream of learning something.</p>
+                <p style="font-size:13px;">As you must be aware that all other websites
+                    are of very cost<br> we are giving this website just for free of cost</p>
+           <ul>
+               <li><b><a href="#"><p style="color:maroon;font-size:14px;"> Finally a Estate Housing Project - with Builder - Buyer Model
+                   and pricing of Estate Group Housing.Please find details here. Location Hyderabad</p></a></b> </li>
+               <li><b><a href="#"><p style="color:maroon;font-size:14px;"> FAQ - Uppal Project </p></a></b></li>
+               <li><b><a href="#"><p style="color:maroon;font-size:14px;">Budget Apartment Options in Attapur</p></a></b></li>
+               <li><b><a href="#"><p style="color:maroon;font-size:14px;"> LB - Nagar Project - 2500 per Sqft </p></a></b></li>
+
+           </ul>
+                <h4 style="font-size:14px;"><b>General Information:</b></h4>
+<ol>
+    <li><p style="font-size:13px;">You can join the General Group for free in Whatsapp or any social media.</p></li>
+    <li><p style="font-size:13px;">You can reach us at anytime anywhere whenever you need our help for suggestion or any queries.</p></li>
+</ol>
+                <p style="font-size:13px;color:blue;">For any question you can message me.Please fill details below so that we can have a confirmed discussion.</p>
+   <div class="contact">
+
+
+       {% if messages %}
+<ul>
+	{% for message in messages %}
+	   <li>{{ message }}</li>
+	{% endfor %}
+</ul>
+	{% endif %}
+
+        <div class="z-depth-1 grey lighten-4 row" style="display: block; padding: 32px 48px 0px 48px; border: 1px solid #EEE;">
+    <form method="post">
+          {% csrf_token %}
+        <table>
+          {{ form.as_p }}
+            </table>
+          <button type="submit">Submit</button>
+
+    </form>
+        </div>
+   </div>
+
+            </div>
+
+
+
+
+
+{% endblock %}
